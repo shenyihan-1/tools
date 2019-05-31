@@ -1,4 +1,10 @@
 #!/bin/bash
+#
+#Autor:ZENG
+#Date:2018/12/7
+#
+
+
 
 IP=`ip a|grep inet|grep brd|awk '{print $2}'|awk -F/ '{print $1}'`                       #得到机器IP
 WD=`ip a|grep inet|grep brd|awk '{print $2}'|awk -F/ '{print $1}'|awk -F. '{print $2}'`  #得到机器网段
